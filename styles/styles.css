@@ -116,7 +116,7 @@ body .hero div {
   margin: auto;
 }
 body .hero div h1 {
-  font-family: Canela Trial;
+  font-family: var(--font);
   font-weight: 400;
   font-size: 52px;
   line-height: 100%;
@@ -132,6 +132,9 @@ body .hero div h2 {
   text-align: center;
   margin-top: 12px;
   color: #000;
+}
+body .prj-type {
+  margin-top: 70px;
 }
 
 @media screen and (max-width: var(--max-width)) {
