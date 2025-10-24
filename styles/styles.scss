@@ -1,0 +1,165 @@
+@import './var.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-grey);
+
+    h2 {
+        color: var(--black);
+    }
+
+    .btn {
+        font-family: var(--font-2);
+        font-weight: 400;
+        font-size: 14px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--white);
+        background: var(--brown);
+        border-radius: 4px;
+        padding: 16px 38px
+    }
+
+    .component {
+        width: 100%;
+
+        >div {
+            max-width: var(--max-width);
+            margin: auto;
+
+            >h2 {
+                margin-bottom: 50px;
+            }
+
+            h2 {
+                font-family: var(--font);
+                font-weight: 300;
+                font-size: 26px;
+                line-height: 100%;
+                letter-spacing: 0%;
+            }
+
+            .component-child {
+                background-color: var(--white);
+                box-shadow: var(--box-shadow);
+                padding: 45px;
+                border-radius: 16px;
+
+                >h2 {
+                    margin-bottom: 40px;
+                }
+
+                >div {
+                    display: flex;
+                    gap: 16px;
+                    justify-content: space-between;
+                }
+
+                .card {
+                    padding: 75px 30px;
+                    border: 2px solid var(--brown-2);
+                    box-shadow: var(--box-shadow-2);
+                    border-radius: 8px;
+                    width: 285px;
+                    height: 355px;
+
+                    >img {
+                        width: 160px;
+                        height: 160px;
+                        object-fit: contain;
+                        margin: auto;
+                        display: flex;
+                        justify-self: center;
+                        margin-bottom: 21px;
+                    }
+
+                    >h3 {
+                        font-family: var(--font);
+                        color: var(--black);
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .top-nav {
+        padding-top: 26px;
+
+        nav {
+            max-width: var(--max-width);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            flex-wrap: wrap;
+
+            @media screen and (max-width: 680px) {
+                a {
+                    flex: 100%;
+                }
+            }
+
+            a {
+                padding: 16px 38px;
+            }
+        }
+
+        @media screen and (max-width: 1280px) {
+            nav {
+                padding-left: 5%;
+                padding-right: 5%;
+                gap: 30px;
+            }
+        }
+    }
+
+    .hero {
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+        div {
+            max-width: var(--max-width);
+            margin: auto;
+
+            h1 {
+                font-family: Canela Trial;
+                font-weight: 400;
+                font-size: 52px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                color: var(--black);
+            }
+
+            h2 {
+                font-family: var(--font-2);
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 33px;
+                text-align: center;
+                margin-top: 12px;
+                color: #000;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: var(--max-width)) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

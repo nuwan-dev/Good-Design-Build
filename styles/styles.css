@@ -1,0 +1,144 @@
+@import './var.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-grey);
+}
+body h2 {
+  color: var(--black);
+}
+body .btn {
+  font-family: var(--font-2);
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--brown);
+  border-radius: 4px;
+  padding: 16px 38px;
+}
+body .component {
+  width: 100%;
+}
+body .component > div {
+  max-width: var(--max-width);
+  margin: auto;
+}
+body .component > div > h2 {
+  margin-bottom: 50px;
+}
+body .component > div h2 {
+  font-family: var(--font);
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+body .component > div .component-child {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 45px;
+  border-radius: 16px;
+}
+body .component > div .component-child > h2 {
+  margin-bottom: 40px;
+}
+body .component > div .component-child > div {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+body .component > div .component-child .card {
+  padding: 75px 30px;
+  border: 2px solid var(--brown-2);
+  box-shadow: var(--box-shadow-2);
+  border-radius: 8px;
+  width: 285px;
+  height: 355px;
+}
+body .component > div .component-child .card > img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin: auto;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 21px;
+}
+body .component > div .component-child .card > h3 {
+  font-family: var(--font);
+  color: var(--black);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+body .top-nav {
+  padding-top: 26px;
+}
+body .top-nav nav {
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 680px) {
+  body .top-nav nav a {
+    flex: 100%;
+  }
+}
+body .top-nav nav a {
+  padding: 16px 38px;
+}
+@media screen and (max-width: 1280px) {
+  body .top-nav nav {
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 30px;
+  }
+}
+body .hero {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+body .hero div {
+  max-width: var(--max-width);
+  margin: auto;
+}
+body .hero div h1 {
+  font-family: Canela Trial;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--black);
+}
+body .hero div h2 {
+  font-family: var(--font-2);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+  text-align: center;
+  margin-top: 12px;
+  color: #000;
+}
+
+@media screen and (max-width: var(--max-width)) {
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
