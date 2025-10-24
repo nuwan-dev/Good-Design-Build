@@ -53,6 +53,7 @@ body .component > div .component-child > div {
   display: flex;
   gap: 16px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 body .component > div .component-child .card {
   padding: 75px 30px;
